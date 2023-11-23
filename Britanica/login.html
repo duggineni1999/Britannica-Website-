@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+
+        .body1{
+            position: relative;
+            height: 90vh;
+        }
+      .cards{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        max-width: 40%;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      @media (min-width: 200px) and (max-width:700px) {
+            .cards{
+                max-width: 100%;
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body class="bg-black p-1">
+    <div class="body1">
+        <div class="card cards shadow p-4  my-2 align-content-center mt-lg-5 mt-sm-5 mt-5 "  >
+                <div class="">
+                    <div class=" border-0 my-3 col-12">
+                        <h1 class=" fs-4 text-center " id="staticBackdropLabel">Login Form</h1>
+                    </div>
+                    <div class="">
+                        <form>
+                            <div class="mb-3 col-12">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 col-12">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control"  placeholder="Password" id="exampleInputPassword1">
+                            </div>
+                            <div class="d-flex flex-row justify-content-center">
+                                <a  class="btn btn-primary my-4 "  id="login" >Submit</a>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <p class="text-center my-3 col-12">
+                        If you not Registered Please <a type="button" href="C:\Users\SPSOFT\Desktop\html\test\signup.html">
+                        Sign Up
+                    </a>
+                    </p>
+
+                    <p class="text-center col-12">Back To <a href="C:\Users\SPSOFT\Desktop\html\test\test.html">Home</a> Page </p>
+                    
+                </div>
+            </div>
+    </div>
+
+
+    <script src="api.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

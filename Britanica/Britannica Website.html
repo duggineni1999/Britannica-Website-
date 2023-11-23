@@ -1,0 +1,789 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="download.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Britannica</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <nav class="header sticky-top">
+        <div class="global-nav-top-bar">
+            <div class="d-flex flex-wrap justify-content-between ">
+                <div class="m-2 ">
+                    <button class="btn text-white d-inline-flex border-0 h-100 bg-transparent offcanvabutton" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <ion-icon class="p-1 menu-icon" name="menu-outline"></ion-icon>
+                        <h5 class="explore p-1">Explore</h5>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start bg-dark" data-bs-backdrop="static" tabindex="1"
+                    id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header d-flex flex-row justify-content-start">
+
+                        <button type="button " class="btn-close mr-5 bg-light " data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body fw-bold ">
+                        <div class="">
+                            <div class="">
+                                <div class="box1 text-center  mb-3">
+                                    <input type="search" name="" placeholder="Search Britannica.....">
+                                    <ion-icon name="search-outline"></ion-icon>
+                                </div>
+                                <div class="p-1 d-flex flex-column align-items-sm-center align-items-lg-start align-items-center">
+                                    <a class="anchor1 text-white border-2 border-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Home</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Games & Quizzes</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">History & Society</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Science & Tech</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Biographies</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Animal & Nature</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Geography & Travel</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Art & Photography</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Money</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Videos</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">On This Day</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">One Good Fact</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">Dictionary</a>
+                                    <a class="anchor1 text-white fs-5 ms-2 mb-2 w-100 text-decoration-none p-2 " href="">New Articles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex  align-items-center ">
+                    <div class="d-flex flex-column justify-content-center">
+                        <img loading="lazy" src="https://cdn.britannica.com/mendel/eb-logo/MendelNewThistleLogo.png"
+                            alt="Encyclopedia Britannica" class="global-nav-center global-nav-logo" />
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0 ">
+                    <div class="d-flex align-items-center justify-content-end m-0 px-2 py-3">
+                                    <!-- Button trigger modal -->
+                        <div class=" navbar-nav d-none d-sm-none d-md-none d-lg-inline  ">
+                                <!-- <button type="button" class="btn btn-transparent text-white border-0 dropdown-toggle" data-bs-toggle="modal" data-bs-target="#ModalForm"
+                                    aria-expanded="false" data-bs-auto-close="outside">
+                                    Login
+                                </button> -->
+                                <!-- <button type="button" class="btn btn-primary px-3 mx-3 " data-bs-toggle="modal" data-bs-target="#ModalForm">
+                                    Login
+                                </button> -->
+                                <a class="btn btn-primary px-3 mx-3 bg-transparent border-0" href="login.html" >Login</a>
+                        </div>
+                        <div class=" navbar-nav d-inline d-sm-inline d-md-inline d-lg-none   ">
+                                <!-- <button type="button" class="btn btn-transparent text-white border-0 dropdown-toggle" data-bs-toggle="modal" data-bs-target="#ModalForm"
+                                    aria-expanded="false" data-bs-auto-close="outside">
+                                    Login
+                                </button> -->
+                                <button type="button" class="btn btn-primary w-100 bg-transparent border-0  p-0" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                                    <ion-icon name="person-circle-outline"></ion-icon>
+                                </button>
+                        </div>
+
+                            <button type="button" class="btn btn-danger sub-button  ">Subscribe</button>
+                    </div>  
+                </div>
+                        
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true"  data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered bg-transparent">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control"  placeholder="Password" id="exampleInputPassword1">
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a  class="btn btn-primary"  id="login" >Submit</a>
+                        </div>
+                        
+                    </form>
+                </div>
+                <p class="text-center">
+                    If you not Registered Please <a type="button" class="" data-bs-toggle="modal" data-bs-target="#ModelForm1">
+                    Sign Up
+                </a>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModelForm1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" >
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign Up Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailaddress" placeholder="Email Address" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a type="submit" class="btn btn-primary" id="signup">Submit</a>
+                        </div>
+                        
+                    </form>
+                </div>
+                <p class="text-center">
+                    If you already Registered please <a type="button" class="" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                    Login
+                </a>
+                </p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-black container-fluid">
+        <div class="d-flex flex-row justify-content-center mb-3">
+            <div class="box">
+                <input type="search" name="" placeholder="Search Britannica.....">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="normal-mention">
+            <ul class="nav justify-content-center  ">
+                <li class="nav-item ">
+                    <a class="nav-link acnhor-border me-2 mb-2 " id="home" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2 mb-2 acnhor-border" id="games" href="#">Games & Quizzes</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link  me-2 mb-2 acnhor-border" id="history" href="#">History & Society</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2 mb-2 acnhor-border" id="science" href="#">Science & Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2 mb-2 acnhor-border" id="bio" href="#">Biographies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2 mb-2 acnhor-border" id="animal" href="#">Animal & Nature</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2 mb-2 acnhor-border" id="geograph" href="#">Geography & Travel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2 mb-2 acnhor-border" id="arts" href="#">Arts & Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2 mb-2 acnhor-border" id="money" href="#">Money</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white me-2 mb-2 acnhor-border" id="video" href="#">Videos</a>
+                </li>
+
+            </ul>
+        </div>
+        <nav>
+            <div class="scrollable-navbar">
+                <div class="scrollable-tabs-container">
+                    <div class="left-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Games & Quizzes</a>
+                        </li>
+                        <li>
+                            <a href="#">History & Society</a>
+                        </li>
+                        <li>
+                            <a href="#">Science & Tech</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active ">Biographies</a>
+                        </li>
+                        <li>
+                            <a href="#">Animal & Nature</a>
+                        </li>
+                        <li>
+                            <a href="#">Geography & Travel</a>
+                        </li>
+                        <li>
+                            <a href="#">Arts & Culture</a>
+                        </li>
+                        <li>
+                            <a href="#">Money</a>
+                        </li>
+                        <li>
+                            <a href="#">Videos</a>
+                        </li>
+                    </ul>
+
+                    <div class="right-arrow active">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class=" ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="text-center mt-3 mb-0 mb-5">
+            <h2 class="display-3 m-0 d-inline-block mb-3 mt-5 fw-medium  border-4 ">Biographies <hr class="bio-line w-100 ">
+        </h2>
+      </div>
+  
+      <div class="container mb-5 pb-5" id="container2">
+        <div class="row ">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 pb-3 mb-5">
+                    <div class="card p-3 px-0 pt-0 h-100  border-0 shadow rounded-top-5 " >
+                        <img class="card-img-top rounded-top-5  " src="Narges-Mohammadi-1200x900.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class=" mt-2 text-primary-emphasis fw-bold">Narges Mohammadi</h5>
+                            <p class="card-text">Winner of 2023 nobel prize for peace, Mohammadi is a human-right activi and...</p>
+                        </div>
+                    </div>
+                
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 pb-3 mb-5">
+                <div class="card p-3 px-0 pt-0 h-100 border-0 pt-0  shadow rounded-top-5">
+                    <img class="card-img-top  rounded-top-5  " src="israel-pm-benjamin-netanyahu.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="mt-2 text-primary-emphasis fw-bold">Benjamin Netanyahu</h5>
+                        <p class="card-text">He has served as his country prime minister three times (1996-99,2009-21,and
+                            2022-)...</p>
+                    </div>
+                </div>
+            
+        </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="card popular-container p-1 border-0 ">
+                    <h2 class="font-serif mb-4 ">Popular</h2>
+                    <div class="row align-items-center">
+                        <div class="col-2 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-1-circle rounded-5" style="background-color:lightblue;" viewBox="0 0 16 16">
+                                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+                              </svg>
+                        </div>
+                        <div class="col-5">
+                            <p class="ml-3 text-primary fs-5 fw-bold">Ismail Haniyeh</p>
+                        </div>
+                        <div class="col-5">
+                            <img src="sm1.PNG" class="rounded-end-2 rounded-start-2" width="100%" height="80" alt="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-2-circle rounded-5" style="background-color:lightblue;" viewBox="0 0 16 16">
+                                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+                              </svg>
+                        </div>
+                        <div class="col-5">
+                            <p class="ml-3 text-primary fs-5 fw-bold">Steve Scalise</p>
+                        </div>
+                        <div class="col-5">
+                            <img src="sm1.PNG"  class="rounded-end-2 rounded-start-2" width="100%" height="80" alt="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-3-circle rounded-5" style="background-color:lightblue;" viewBox="0 0 16 16">
+                                <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                              </svg>
+                        </div>
+                        <div class="col-5">
+                            <p class="ml-3 text-primary fs-5 fw-bold">Taylor Swift</p>
+                        </div>
+                        <div class="col-5">
+                            <img src="sm1.PNG"  class="rounded-end-2 rounded-start-2" width="100%" height="80" alt="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-4-circle rounded-5" style="background-color:lightblue;" viewBox="0 0 16 16">
+                                <path d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"/>
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+                              </svg>
+                        </div>
+                        <div class="col-5">
+                            <p class="ml-3 text-primary fs-5 fw-bold">Miriam Makeba</p>
+                        </div>
+                        <div class="col-5">
+                            <img src="sm1.PNG"  class="rounded-end-2 rounded-start-2" width="100%" height="80" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="d-flex flex-column justify-content-start" style="padding:20px;">
+            <h1 class="heading-tag ">Powerful Digital</h1>
+            <h1 class="heading-tag1 ">Solution With GP<span style="color: yellow;font-size: 10px;"><ion-icon
+                        name="ellipse"></ion-icon></span></h1>
+            <p class=" fs-5 text-white text-center">We are team of Talented Digital Marketers</p>
+        </div>
+        <div class="container mb-5">
+            <div class="row justify-content-between">
+
+                <div class=" col-12 col-lg-2  ">
+                    <div class="heading-card p-3 mb-3" ">
+                        <ion-icon class=" icon-style" name="storefront-outline"></ion-icon>
+                        <h5 style="color: white;">Store</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2  ">
+                    <div class="heading-card p-3 mb-3">
+                        <ion-icon class="icon-style" name="calendar-clear-outline"></ion-icon>
+                        <h5 style="color: white;">Analysis</h5>
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-2 ">
+                    <div class="heading-card p-3 mb-3 ">
+                        <ion-icon class="icon-style" name="stats-chart-outline"></ion-icon>
+                        <h5 style="color: white;">Schedule</h5>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-2  ">
+                    <div class="heading-card p-3 mb-3">
+                        <ion-icon class="icon-style" name="storefront-outline"></ion-icon>
+                        <h5 style="color: white;">Panit</h5>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-2 ">
+                    <div class="heading-card p-3 mb-3">
+                        <ion-icon class="icon-style" name="server-outline"></ion-icon>
+                        <h5 style="color: white;">Database</h5>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="fs-6 text-light-emphasis mt-5">TEAM</h1>
+                    <p class="section-description">
+                        CHECK OUR TEAM</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
+                    <div class="card team-cards p-0 m-0 shadow border-0 mb-5 " style="width: 100%; height: 90%; border-radius: 10px;">
+                        <img src="team-1.jpg" class="card-img-top main-image1 position-relative" alt="...">
+                        <div class=" card position-absolute bg-transparent border-0 w-100 social-card " id="team1-card" style="margin-top: 250px;"> 
+                            <div class="d-flex flex-row justify-content-center">
+                                <button class="button1 btn btn-dark  border-0 ms-2 p-2 socialmedia"><ion-icon
+                                    style="height: 20px; width: 20px;font-weight: 500;"
+                                    name="mail-open-outline"></ion-icon></button>
+                                <button class="button1 btn btn-dark  border-0 ms-2 p-2 socialmedia"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-microsoft"></ion-icon></button>
+                                <button class="button1 btn btn-dark  border-0 ms-2 p-2 socialmedia"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-facebook"></ion-icon></button>
+                                <button class="button1 btn btn-dark  border-0 ms-2 p-2 socialmedia"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-instagram"></ion-icon></button>
+                                <button class="button1 btn btn-dark  border-0 ms-2 p-2 socialmedia"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-whatsapp"></ion-icon></button>
+                            </div>
+                            
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mt-2 text-center">Walter White</h5>
+                            <p class="card-text text-center"><small class="text-muted">Cheif Executive Officer</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="card  team-cards shadow  mb-5 border-0" style="width: 100%; height: 90%;border-radius: 10px;">
+                        <img src="team-2.jpg" class="card-img-top main-image1 position-relative" alt="...">
+                        <div class="card position-absolute bg-transparent border-0 w-100 social-card" style="margin-top: 250px;"> 
+                            <div class="d-flex flex-row justify-content-center">
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                    style="height: 20px; width: 20px;font-weight: 500;"
+                                    name="mail-open-outline"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-microsoft"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-facebook"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-instagram"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-whatsapp"></ion-icon></button>
+                            </div>
+                            
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mt-2 text-center">Sarah Jhonson</h5>
+                            <p class="card-text text-center"><small class="text-muted">Product Manager</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="card  p-0 m-0 team-cards border-0 shadow mb-5 " style="width: 100%; height: 90%; border-radius: 10px; ">
+                        <img src="team-3.jpg" id="team1-image" class="card-img-top main-image1 position-relative" onmouseover="iconsshow()" onmouseout="removeIcons()" alt="...">
+                        <div class=" card position-absolute  bg-transparent border-0 w-100 social-card" style="margin-top: 250px;"> 
+                            <div class="d-flex flex-row justify-content-center">
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                    style="height: 20px; width: 20px;font-weight: 500;"
+                                    name="mail-open-outline"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-microsoft"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-facebook"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-instagram"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-whatsapp"></ion-icon></button>
+                            </div>
+                            
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mt-2 text-center">William Anderson</h5>
+                            <p class="card-text text-center"><small class="text-muted">CTO</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="card  p-0 m-0  team-cards  border-0 shadow mb-5 " style="width: 100%; height: 90%; border-radius: 10px;">
+                        <img src="team-4.jpg" class="card-img-top main-image1 position-relative" alt="...">
+                        <div class="card position-absolute bg-transparent border-0 w-100 social-card" style="margin-top: 280px;"> 
+                            <div class="d-flex flex-row justify-content-center ">
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                    style="height: 20px; width: 20px;font-weight: 500;"
+                                    name="mail-open-outline"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-microsoft"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-facebook"></ion-icon></button>
+                                <button class="button1 btn btn-dark  socialmedia border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-instagram"></ion-icon></button>
+                                <button class="button1 btn btn-dark socialmedia  border-0 ms-2 p-2"><ion-icon
+                                        style="height: 20px; width: 20px;font-weight: 500;"
+                                        name="logo-whatsapp"></ion-icon></button>
+                            </div>
+                            
+                        </div>
+                        <div class="card-body">
+                            <h5 class="mt-2 text-center">Amanda Jepson</h5>
+                            <p class="card-text text-center"><small class="text-muted">Accountant</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="fs-6 text-light-emphasis mt-5">SERVICE</h1>
+                    <p class="section-description">
+                        CHECK OUR SERVICE
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 ">
+                    <div class="wcu-card p-3 mb-3">
+                        <button class="button-icon"><ion-icon class="service-icon"
+                                name="basketball"></ion-icon></button>
+                        <h5 class="wcu-card-title mt-3">Lorem Ipsum</h5>
+                        <p class="wcu-card-description">
+                            Voluptatum deleniti atque corrupti quos dolores et quasmolestias except
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <button class="button-icon"><ion-icon class="service-icon"
+                                name="document-text-outline"></ion-icon></button>
+                        <h5 class="wcu-card-title mt-3">Sed ut perspiciatis</h5>
+                        <p class="wcu-card-description">
+                            Duis aute irure dolor in reprehendent in voluptate veesse cillum dolore
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <button class="button-icon"><ion-icon class="service-icon"
+                                name="speedometer-outline"></ion-icon></button>
+                        <h5 class="wcu-card-title mt-3">Magni Dolores</h5>
+                        <p class="wcu-card-description">
+                            Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <button class="button-icon"><ion-icon class="service-icon"
+                                name="earth-outline"></ion-icon></button>
+                        <h5 class="wcu-card-title mt-3">Nemo Enim</h5>
+                        <p class="wcu-card-description">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blandinis
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <div>
+                            <button class="button-icon"><ion-icon class="service-icon"
+                                    name="laptop-outline"></ion-icon></button>
+                        </div>
+                        <h5 class="wcu-card-title mt-3">Dele cardo</h5>
+                        <p class="wcu-card-description">
+                            Quis consequatur seepe eligend voluptatem consequatur dolor consequuntur
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <button class="button-icon"><ion-icon class="service-icon"
+                                name="home-outline"></ion-icon></button>
+                        <h5 class="wcu-card-title mt-3">Divera don</h5>
+                        <p class="wcu-card-description">
+                            Modi nostrum vel laborum. Porro fugit error sit hinussapiente sit aspernatur
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex flex-row justify-content-end ">
+            <button
+                style="height: 30px; width: 35px; margin-right: 20px; margin-bottom: 20px;text-align: center; background-color: orange;border: 0;border-radius: 5px;"><ion-icon
+                    name="arrow-up-outline"></ion-icon></button>
+        </div>
+    </div>
+
+    <div class="bg-white mt-3">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 mb-4">
+                    <h1 class="fs-6 text-light-emphasis mt-5">CONTACT</h1>
+                    <p class="section-description">CONTACT US </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-4">
+                    <div class="card mb-1 border-0">
+                        <div class="d-inline-flex ">
+                            <div class="card col-2 m-2 border-0">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <button class="btn btn-warning px-2 py-3"><ion-icon class="fs-3"
+                                        name="location-outline"></ion-icon></button>
+                                </div>
+                            </div>
+                            <div class="card col-9  m-2 border-0">
+                                <h4>Location:</h4>
+                                <p class="fs-6">A108 Adam Street, New York, NY 535022</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-1 border-0">
+                        <div class="d-inline-flex ">
+                            <div class="card col-2 m-2 border-0">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <button class="btn btn-warning px-2 py-3"><ion-icon class="fs-3"
+                                        name="mail-open-outline"></ion-icon></button>
+                                </div>
+                            </div>
+                            <div class="card col-9  m-2 border-0">
+                                <h4>Emali:</h4>
+                                <p>info@example.com</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-1 border-0">
+                        <div class="d-inline-flex ">
+                            <div class="card col-2 m-2 border-0">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <button class="btn btn-warning px-2 py-3"><ion-icon class="fs-3"
+                                        name="call-outline"></ion-icon></button>
+                                </div>
+                            </div>
+                            <div class="card col-9  m-2 border-0">
+                                <h4>Call:</h4>
+                                <p>+1 5589 55488 55s</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mb-4">
+                    <div class="card border-0 mb-4">
+                        <div class="d-inline-flex mb-3">
+                            <div class="col-6">
+                                <div class="input-group p-2 ">
+                                    <input type="text" class="form-control contact-feild" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
+                                  </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group p-2">
+                                    <input type="text" class="form-control contact-feild" placeholder="Your Email" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group p-2">
+                                <input type="text" class="form-control contact-feild" placeholder="Subject" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                        </div>
+                        <div class="input-group p-2">
+                            <textarea class="form-control message contact-feild" placeholder="Message" aria-label="With textarea"></textarea>
+                          </div>
+
+                    </div>
+
+                    <div class="d-flex flex-row justify-content-center">
+                        <button class="btn btn-warning text-center">Send Message</button>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer bg-black" >
+        <div class="container">
+            <div class="row">
+                <div class="card bg-black text-white mb-2 border-0 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <h4
+                        style="font-size: 30px; font-weight: 300;font-family: Arial, Helvetica, sans-serif;padding-top: 20px; margin-bottom: 20px;">
+                        GP<span style="color: yellow;font-size: 10px;"><ion-icon name="ellipse"></ion-icon></span>
+                    </h4>
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p>
+
+                    <p>Phone: +1 5589 55488 55</p>
+                    <p>Email: info@example.com</p>
+                    <div class=" d-flex flex-row justify-content-start p-1 m-1">
+                        <button class="button1 btn btn-dark"><ion-icon
+                                style="height: 20px; width: 20px;font-weight: 500;"
+                                name="mail-open-outline"></ion-icon></button>
+                        <button class="button1 btn btn-dark"><ion-icon
+                                style="height: 20px; width: 20px;font-weight: 500;"
+                                name="logo-microsoft"></ion-icon></button>
+                        <button class="button1 btn btn-dark"><ion-icon
+                                style="height: 20px; width: 20px;font-weight: 500;"
+                                name="logo-facebook"></ion-icon></button>
+                        <button class="button1 btn btn-dark"><ion-icon
+                                style="height: 20px; width: 20px;font-weight: 500;"
+                                name="logo-instagram"></ion-icon></button>
+                        <button class="button1 btn btn-dark"><ion-icon
+                                style="height: 20px; width: 20px;font-weight: 500;"
+                                name="logo-whatsapp"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="card bg-black text-white mb-2 border-0 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <h4
+                        style="font-size: 30px; font-weight: 300;font-family: Arial, Helvetica, sans-serif;padding-top: 20px;text-align: left;margin-bottom: 20px;">
+                        Useful Links</h4>
+
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Home</p>
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>About Us</p>
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Service</p>
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Terms of Service</p>
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Privacy Policy</p>
+
+                </div>
+                <div class="card bg-black text-white mb-2 border-0 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <h4
+                        style="font-size: 30px; font-weight: 300;font-family: Arial, Helvetica, sans-serif;padding-top: 20px;text-align: left;margin-bottom: 20px;">
+                        Our Service</h4>
+
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Web Design </p>
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Web Development</p>
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Product Management</p>
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Marketing</p>
+                    <p><ion-icon style="color: yellow;" name="chevron-forward"></ion-icon>Graphic Design</p>
+
+                </div>
+                <div class="card  bg-black text-white mb-2 border-0 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <h4
+                        style="font-size: 30px; font-weight: 300;font-family: Arial, Helvetica, sans-serif;padding-top: 20px;text-align: left;margin-bottom: 20px;">
+                        Our News Letter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span style="background-color: orange;" class="input-group-text"
+                                id="basic-addon2">Subscribe</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Make sure to include Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+    
+</html>

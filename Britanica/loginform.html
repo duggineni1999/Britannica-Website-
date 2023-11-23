@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <base href="title.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#dd3d31">
+    <meta name="theme-color" content="#dd3d31">
+    <link rel="icon" type="image/png" href="title.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .card1{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 8px;
+            width: 30vw;
+            border-radius: 10px;
+        }
+        .register{
+            text-align: center;
+            height: 100vh;
+            align-items: center;
+            background-image: url(unnamed.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .main-heading{
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            /* letter-spacing: 2px; */
+            margin-bottom: 20px;
+        }
+        .form{
+            text-align: center;
+            color: aliceblue;
+        }
+        .form-text1{
+            color: aliceblue;
+        }
+        .btn1{
+            margin: 10px;
+            width: 230px;
+            border-radius: 20px;
+            height:45px;
+        }
+        .btnfb{
+            display: inline-flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .btnin{
+            display: inline-flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo{
+            margin: 6px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .circlelogo{
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            
+        }
+    </style>
+    </head>
+    <body class = "register d-flex justify-content-center ">
+        <div class = "card1">
+            <h1 class = "main-heading">Login Form</h1>
+            <form class ="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Phone Number</label>
+                    <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="userlHelp" placeholder="Enter Phone Number">
+                  </div>
+                
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div>
+                    <a  type="submit" class="btnfb btn1 btn btn-primary">
+                        <ion-icon class = "logo" name="save-outline" onclick="fub()"></ion-icon>Submit</a>
+                </div>
+
+                <p>If you Not Registred Please <a href="C:\Users\SPSOFT\Desktop\html\test\register.html">Sign Up</a></p>
+                <div>
+                    <p>Or Login With </p>
+                </div>
+                <div class =" d-flex flex-row justify-content-center">
+                    <button type="submit" class=" circlelogo btnfb btn1 btn btn-primary">
+                        <ion-icon name="logo-facebook"></ion-icon></button>
+                    <button type="submit" class="circlelogo btnin btn1 btn btn-primary">
+                    <ion-icon  name="logo-instagram"></ion-icon> </button>
+                </div>
+              </form>
+
+        </div>
+    </body>
+    <script>
+        function fub(){
+            let user_phone = document.getElementById("exampleInputUsername").value();
+            let user_password = document.getElementById("exampleInputPassword1").value();
+            let user_data={
+                "userphonenumber":user_phone,
+                "userpassword":user_password
+            }
+            console.log(user_data)
+        }
+    </script>
+</html>
+    

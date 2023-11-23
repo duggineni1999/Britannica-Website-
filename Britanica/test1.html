@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Navigation</title>
+  <style>
+    .Skills {
+      background-color: #1c232e;
+      margin: 0;
+      padding: 4rem 2rem;
+      text-align: center;
+      font-size: clamp(1rem, 4vw + 1rem, 70px);
+      position: relative;
+      z-index: 50;
+      width: 100%;
+      overflow-x: hidden; /* Hide horizontal overflow */
+      white-space: nowrap; /* Prevent line breaks */
+      color: white; /* Text color */
+    }
+
+    #backBtn, #nextBtn {
+      width: 8vw;
+      cursor: pointer;
+      color: #373d47;
+      font-size: 50px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #backBtn {
+      left: 10px;
+    }
+
+    #nextBtn {
+      right: 10px;
+    }
+
+    .SkillsContainer {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      text-align: left;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .SkillItem {
+      flex: 0 0 auto;
+      width: 33.3333%;
+      box-sizing: border-box;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    .Skills a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .Skills i {
+      width: 8vw;
+      font-size: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="Skills">
+    <div id="backBtn" onclick="scrollBackward()">&#8592;</div>
+    <div class="SkillsContainer" id="skillsContainer">
+      <!-- Your navigation links go here -->
+      <div class="SkillItem"><a href="#">Home</a></div>
+      <div class="SkillItem"><a href="#">Games & Quizzes</a></div>
+      <div class="SkillItem"><a href="#">History & Society</a></div>
+      <div class="SkillItem"><a href="#">Science & Tech</a></div>
+      <div class="SkillItem"><a href="#">Biographies</a></div>
+      <div class="SkillItem"><a href="#">Animal & Nature</a></div>
+      <div class="SkillItem"><a href="#">Geography & Travel</a></div>
+      <div class="SkillItem"><a href="#">Art & Photography</a></div>
+      <div class="SkillItem"><a href="#">Money</a></div>
+      <div class="SkillItem"><a href="#">Videos</a></div>
+      <!-- Add more navigation links as needed -->
+    </div>
+    <div id="nextBtn" onclick="scrollForward()">&#8594;</div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+
+    function scrollForward() {
+      const container = document.getElementById("skillsContainer");
+      const containerWidth = container.offsetWidth;
+      const itemsPerPage = 3;
+
+      // Calculate the new slide index for forward direction
+      currentSlide++;
+
+      // Ensure the slide index stays within bounds
+      currentSlide = Math.min(Math.ceil(container.children.length / itemsPerPage) - 1, currentSlide);
+
+      // Calculate the new transform value
+      const translateValue = -currentSlide * (containerWidth / itemsPerPage);
+
+      // Apply the new transform value
+      container.style.transform = `translateX(${translateValue}px)`;
+    }
+
+    function scrollBackward() {
+      const container = document.getElementById("skillsContainer");
+      const containerWidth = container.offsetWidth;
+      const itemsPerPage = 3;
+
+      // Calculate the new slide index for backward direction
+      currentSlide--;
+
+      // Ensure the slide index stays within bounds
+      currentSlide = Math.max(0, currentSlide);
+
+      // Calculate the new transform value
+      const translateValue = -currentSlide * (containerWidth / itemsPerPage);
+
+      // Apply the new transform value
+      container.style.transform = `translateX(${translateValue}px)`;
+    }
+  </script>
+
+</body>
+</html>
